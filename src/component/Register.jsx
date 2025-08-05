@@ -2,7 +2,7 @@ import React from 'react'
 import { FaFacebook, FaWhatsapp } from 'react-icons/fa'
 import { FaGoogle, FaGraduationCap } from 'react-icons/fa6'
 
-const Login = ({
+const Register = ({
     icon = FaGraduationCap,
     systemName = 'ERP System',
     Institute = 'ABC Institute',
@@ -10,7 +10,6 @@ const Login = ({
     google = '',
     facebook = '',
     whatsapp = '',
-    createnew = false,
     subtext = '',
 }) => {
 
@@ -57,6 +56,20 @@ const Login = ({
                     <form action="" method="post">
                         <div className="mb-6">
                             <input
+                                type="text"
+                                className='
+                                    w-full h-12 px-4
+                                    border border-gray-300 rounded-lg
+                                    focus:outline-none focus:border-violet-700
+                                    placeholder-gray-400
+                                    transition-all duration-300
+                                    shadow-sm
+                                '
+                                placeholder='Enter Username'
+                            />
+                        </div>
+                        <div className="mb-6">
+                            <input
                                 type="email"
                                 className='
                                     w-full h-12 px-4
@@ -85,16 +98,13 @@ const Login = ({
                         </div>
                         <div>
                             <button className='w-full bg-violet-700 text-white py-3 rounded-lg font-semibold text-lg hover:bg-violet-800 transition duration-300 shadow-md'>
-                                SignIn
+                                Create New Account
                             </button>
                         </div>
                     </form>
 
                     <div className="flex justify-between mt-6 text-sm font-medium">
-                        <a href="#" className='text-violet-700 hover:underline transition duration-300'>Forget Password</a>
-                        {createnew && (
-                            <a href="/register" className='text-violet-700 hover:underline transition duration-300'>Create Account</a>
-                        )}
+                        <a href="/" className='text-violet-700 hover:underline transition duration-300'>Go to Login</a>
                     </div>
 
                     <div className="text-gray-500 mt-6 text-center text-sm font-medium leading-relaxed">
@@ -113,4 +123,4 @@ const Login = ({
     )
 }
 
-export default Login
+export default Register
