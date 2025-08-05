@@ -104,7 +104,7 @@ const Login = ({
             </div>
 
             <div className="text-gray-500 text-center mt-16 text-sm">
-                &copy; ERP System - {new Date().getFullYear()} | Developed and Engineered by{' '}
+                &copy; {systemName} - {new Date().getFullYear()} | Developed and Engineered by{' '}
                 <a className='text-violet-700 hover:underline transition duration-300' href="http://blackalphalabs.com/" target='_blank' rel="noreferrer">
                     BlackAlphaLabs
                 </a>
