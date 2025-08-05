@@ -20,7 +20,7 @@ const Register = ({
                     <div className="text-violet-500">
                         {icon && <span className="h-20 w-auto mx-auto md:mx-0 block text-violet-500">{React.createElement(icon, { className: 'h-20 w-auto mx-auto md:mx-0' })}</span>}
 
-                        <h1 className="text-4xl font-bold mt-6">Welcome back to</h1>
+                        <h1 className="text-4xl font-bold mt-6">Welcome to the</h1>
                         <p className="text-3xl font-semibold mt-1">{systemName}</p>
                     </div>
                     <div className="mt-4">
